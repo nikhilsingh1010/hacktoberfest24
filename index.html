@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+
     .popup {
       display: none;
       position: fixed;
@@ -22,16 +24,20 @@
       align-items: center;
       z-index: 50;
     }
+
     .popup-content {
       background: white;
       padding: 20px;
       border-radius: 8px;
       max-width: 600px;
       width: 90%;
-      max-height: 80vh; /* Limit height */
-      overflow-y: auto; /* Enable scrolling */
+      max-height: 80vh;
+      /* Limit height */
+      overflow-y: auto;
+      /* Enable scrolling */
       position: relative;
     }
+
     .close-btn {
       position: absolute;
       top: 10px;
@@ -40,6 +46,7 @@
     }
   </style>
 </head>
+
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Navbar -->
@@ -71,7 +78,8 @@
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold">Welcome to Hacktoberfest24</h2>
       <p class="text-lg mt-4">Explore and contribute to open-source projects by our amazing community of developers.</p>
-      <a href="#projects" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition">
+      <a href="#projects"
+        class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition">
         Explore Projects
       </a>
     </div>
@@ -117,7 +125,8 @@
       { name: "Timer", file: "timer.html", description: "A simple timer with fullscreen mode." },
       { name: "BMI Calculator", file: "bmi-calc.html", description: "A simple BMI Calculator." },
       { name: "Random Quote", file: "random-quote.html", description: "Random Quote Generator." },
-      
+      { name: "Palindrome Checker", file: "palindrome.html", description: "Web App for checking the String is Palindrome or not " },
+
       // More projects can be added here as needed
     ];
 
@@ -194,4 +203,5 @@
   </script>
 
 </body>
+
 </html>
