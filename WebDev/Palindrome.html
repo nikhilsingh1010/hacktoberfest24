@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        * {
+            background-color: #545375;
+        }
+
+        #check-btn {
+            background-color: rgb(234, 197, 234);
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        #text-input {
+            background-color: rgb(234, 197, 234);
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        #result {
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            font-weight: bolder;
+            background-color: #F4E9F3;
+        }
+
+        #sect {
+            width: 500px;
+            height: 200px;
+            border: 3px solid black;
+            margin: 10px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            display: inline-block;
+            background-color: #F4E9F3;
+            box-shadow: 4px 4px 10px rgb(186, 210, 211);
+            border-radius: 30px;
+        }
+
+        #h1 {
+            margin: 10px;
+            margin-top: 50px;
+            font-size: 56px;
+            color: aliceblue;
+            font-style: normal;
+        }
+
+        #sect2 {
+            width: 500px;
+            height: 150px;
+            border: 3px solid black;
+            margin: 10px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            display: inline-block;
+            background-color: darkgreen;
+            box-shadow: 4px 4px 10px rgb(61, 105, 107);
+            border-radius: 30px;
+        }
+
+        #h2 {
+            background-color: darkgreen;
+        }
+
+        #h3 {
+            background-color: #F4E9F3;
+        }
+    </style>
+</head>
+
+<body align="center">
+    <h1 id="h1">Is it a Palindrome?</h1>
+    <section id="sect"><br>
+        <h3 id="h3">Enter text to check for a palindrome:</h3>
+        <br>
+        <input id="text-input">
+        <button id="check-btn">Check</button>
+        <br><br>
+        <div id="result"></div>
+    </section>
+    <br />
+    <section id="sect2">
+        <h1 id="h2">A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring
+            punctuation, case, and spacing.</h1>
+    </section>
+
+    <script>
+        const textInput = document.getElementById("text-input");
+        const checkButton = document.getElementById("check-btn");
+        const result = document.getElementById("result");
+
+        checkButton.addEventListener("click", () => {
+            const lowerReplaced = textInput.value.toLowerCase().replace(/[^A-Za-z0-9]/g, "");
+
+            if (textInput.value === "") {
+                alert("Please input a value");
+            } else if (textInput.value.length === 1) {
+                result.innerText = `${textInput.value} is a palindrome`;
+            } else if (lowerReplaced === [...lowerReplaced].reverse().join("")) {
+                result.innerText = `${textInput.value} is a palindrome`;
+            } else {
+                result.innerText = `${textInput.value} is not a palindrome`;
+            }
+        });
+    </script>
+</body>
+
+</html>
