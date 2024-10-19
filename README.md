@@ -38,6 +38,7 @@ This repository is designed to host contributions made during **Hacktoberfest24*
 We encourage everyone to get involved! Whether it’s fixing bugs, improving documentation, or adding new features—every contribution matters.
 
 ### Steps to Contribute:
+![Steps Guide](https://github.com/sestopus/hacktoberfest24/blob/main/res/images/Hacktoberfest24.png)
 1. **Fork the Repository**: Click on the "Fork" button at the top-right of this page.
 2. **Clone Your Fork**: 
     ```bash
