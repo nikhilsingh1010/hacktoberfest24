@@ -99,7 +99,7 @@ If you're new to contributing to open source, here’s a quick guide to help you
 ---
 
 ## 🌟 Guide for adding WebDev Projects
-Also add your project name and small description in the same format as other files in the array ProjectFiles. See from line no 115(may be changed look for projectFiles) in index.html file.
+Also add your project name and small description in the same format as other files in the array ProjectFiles. See from line no 115(may be changed look for projectFiles) in index.html file. If your project contains seperate file, make sure your first page is inside the WebDev folder, and all other files are inside another subfolder, with subfolder as username. eg, WebDev/project-first-page.html, WebDev/username/style.css, WebDev/username/script.js
 
 ## 🌟 Guide for adding Python Projects
 Also add your project name and small description in the same format as other files in the array ProjectFiles. See from line no 123(may be changed, look for pythonFiles) in index.html file.
