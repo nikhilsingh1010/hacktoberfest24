@@ -39,6 +39,7 @@ We encourage everyone to get involved! Whether it’s fixing bugs, improving doc
 
 ### Steps to Contribute:
 ![Steps Guide](https://github.com/sestopus/hacktoberfest24/blob/main/res/images/Hacktoberfest24.png)
+0. **Star the repository.**
 1. **Fork the Repository**: Click on the "Fork" button at the top-right of this page.
 2. **Clone Your Fork**: 
     ```bash
