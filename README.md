@@ -38,6 +38,7 @@ This repository is designed to host contributions made during **Hacktoberfest24*
 We encourage everyone to get involved! Whether it’s fixing bugs, improving documentation, or adding new features—every contribution matters.
 
 ### Steps to Contribute:
+![Steps Guide](https://github.com/sestopus/hacktoberfest24/blob/main/res/images/Hacktoberfest24.png)
 1. **Fork the Repository**: Click on the "Fork" button at the top-right of this page.
 2. **Clone Your Fork**: 
     ```bash
@@ -98,7 +99,7 @@ If you're new to contributing to open source, here’s a quick guide to help you
 ---
 
 ## 🌟 Guide for adding WebDev Projects
-Also add your project name and small description in the same format as other files in the array ProjectFiles. See from line no 115(may be changed look for projectFiles) in index.html file.
+Also add your project name and small description in the same format as other files in the array ProjectFiles. See from line no 115(may be changed look for projectFiles) in index.html file. If your project contains seperate file, make sure your first page is inside the WebDev folder, and all other files are inside another subfolder, with subfolder as username. eg, WebDev/project-first-page.html, WebDev/username/style.css, WebDev/username/script.js
 
 ## 🌟 Guide for adding Python Projects
 Also add your project name and small description in the same format as other files in the array ProjectFiles. See from line no 123(may be changed, look for pythonFiles) in index.html file.
