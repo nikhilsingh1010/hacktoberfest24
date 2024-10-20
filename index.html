@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Our Contributors' Web Projects - Hacktoberfest24</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -88,18 +89,18 @@
   <!-- Projects Section -->
   <main class="container mx-auto px-6 py-8" id="projects">
     <h2 class="text-3xl font-semibold mb-6 text-center">WebDev Projects</h2>
-    <div id="project-list" class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div id="project-list" class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3" data-aos="fade-down">
       <!-- HTML Projects will be inserted here by JavaScript -->
     </div>
 
     <h2 class="text-3xl font-semibold mb-6 text-center mt-10">Python Scripts</h2>
-    <div id="python-list" class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div id="python-list" class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3" data-aos="fade-down">
       <!-- Python Projects will be inserted here by JavaScript -->
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 mt-12">
+  <footer class="bg-gray-900 text-white py-6 mt-12"> 
     <div class="container mx-auto text-center">
       <p>&copy; 2024 Hacktoberfest24. All rights reserved.</p>
       <nav class="mt-4">
@@ -203,6 +204,11 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
 </body>
 
